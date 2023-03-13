@@ -19,17 +19,19 @@ section.meme-editor-container{
   align-content: stretch;
   flex-wrap: wrap;
   justify-content: center;
-  max-height: 75vh;
+  max-height: 92vh;
   background-size: contain;
   background-repeat: no-repeat;
   background-position-x: center;
-  height: 90vh;
+  /* height: 92vh; */
   filter: drop-shadow(0 0 0.75rem cornflowerblue);
   padding: 1vh;;
+  max-width: 100%;
 }
 
 .meme-editor-container > div{
   height: 25%;
+  max-height: 23vh;
   /* min-width: 80%; */
   display: flex;
   align-items: center;
@@ -42,6 +44,7 @@ section.meme-editor-container{
   text-shadow:2px 2px 0 #000;
   min-width: 5em;
   cursor: pointer;
+  
   
 }
 
@@ -80,3 +83,11 @@ section.meme-editor-container{
 #root > .container{
   width: 90% !important;
 }
+ 
+.meme-editor-box{
+  display: flex !important;
+  justify-content: center !important;
+  /* flex-direction: column; */
+  /* align-items: center; */
+
+} 

@@ -5,9 +5,6 @@ const MemesTable = ({ memes, activePage, activeMeme, setActiveMeme }) => {
     const perPage = 10;
     const start = (activePage - 1) * perPage;
     const end = start + perPage - 1
-
-
-    console.log(memes);
     
     const handleClick = (idx) => {
         setActiveMeme(idx + start)
@@ -27,7 +24,7 @@ const MemesTable = ({ memes, activePage, activeMeme, setActiveMeme }) => {
                 {
 
                     memes.slice(start, end).map((meme, idx) =>
-                        <Table.Row onClick={(e) => handleClick(idx) } className={activeMeme === idx + start ? "active" : ""}>
+                        <Table.Row key={idx} onClick={(e) => handleClick(idx) } className={activeMeme === idx + start ? "active" : ""}>
                             <Table.Cell >
                                 <Image src={meme.url} rounded fluid />
                             </Table.Cell>
