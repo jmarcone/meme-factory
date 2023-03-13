@@ -11,3 +11,72 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+section.meme-editor-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: stretch;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-height: 75vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  height: 90vh;
+  filter: drop-shadow(0 0 0.75rem cornflowerblue);
+  padding: 1vh;;
+}
+
+.meme-editor-container > div{
+  height: 25%;
+  /* min-width: 80%; */
+  display: flex;
+  align-items: center;
+  
+  font-family: impact;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow:2px 2px 0 #000;
+  min-width: 5em;
+  cursor: pointer;
+  
+}
+
+.meme-editor-container > div.top{
+  align-items: start;
+  padding-top: 2.5vh;
+  
+}
+
+.meme-editor-container > div.bottom{
+  align-items: end;
+  
+}
+
+.meme-editor-container > div.fixed{
+  justify-content: center;
+  
+}
+
+.memes-table tr{
+  cursor: pointer;
+}
+
+.memes-table  img{
+  max-width: 5em !important;
+  height: 5.5vh;
+  max-height: 5.5vh;
+}
+
+
+.memes-table  tr{
+  height: 6vh;
+  height: 4vh;
+}
+
+#root > .container{
+  width: 90% !important;
+}
